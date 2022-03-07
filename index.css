@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@100;400&family=Roboto:wght@100&family=Spartan:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d5e1ef;
+  height: 100vh;
+  width: 100vw;
+  font-size: 14px;
+  overflow-x: hidden;
+  font-family: "Outfit";
+}
+
+.container {
+  margin: 100px auto;
+  width: 350px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: -10px -10px 20px #cbd7e5, 10px 10px 20px #cbd7e5;
+  min-height: 500px;
+}
+
+.qr-code {
+  background: url("/images/image-qr-code.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.info {
+  margin-top: 20px;
+}
+.info h1 {
+  margin-bottom: 20px;
+  padding: 0px;
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+}
+
+.info p {
+  color: #a7abb5;
+  padding: 0px 35px;
+  text-align: center;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 270px;
+    min-height: 400px;
+  }
+
+  .info p {
+    padding: 0px 10px;
+  }
+  .info h1 {
+    font-size: 19px;
+    padding: 0px 15px;
+    text-align: center;
+  }
+}
